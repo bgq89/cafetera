@@ -1,0 +1,82 @@
+body {
+	background-image: url("../img/fondo.jpg");
+}
+
+.cabecera {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #38220f;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+.cabecera > #cabecera {
+	color: white;
+	font-style: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 40px;
+}
+
+.mensajes {
+	width: 100%;
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #967259;
+	#border: 2px solid #000000;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+.mensajes > #mensaje {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-style: bold;
+	color: white;
+}
+
+.contenedor-grid {
+	width: 75%;
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	gap: 5%;
+	padding: 3%;
+	background-color: #dbc1ac;
+}
+
+.elemento-grid {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	#background-color: #ece0d1;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#dpreparar {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+#dborrar {
+	grid-column-start: 4;
+	grid-column-end: 6;
+}
+
+.pie {
+	margin-bottom: 0%;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 10px;
+}
+
+#cafetera {
+	float: inherit;
+
+}
