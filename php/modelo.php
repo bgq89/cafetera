@@ -36,7 +36,14 @@ class Modelo {
 
 	// ¿Hay suficiente café?
 	public static function cafe() {
-		$stmt = self::$bd->prepare("SELECT cafe FROM cafetera");
+		$stmt = self::$bd->query("SELECT cafe FROM cafetera");
+		$stmt->execute();
+	}
+
+	// Quitar café cuando se hace uno
+	public static function quitarCafe($cantidad) {
+		$stmt = self::$bd->prepare("UPDATE cafe SET :cantidad");
+		$stmt->bindParam(':cantidad', $cantidad);
 		$stmt->execute();
 	}
 
